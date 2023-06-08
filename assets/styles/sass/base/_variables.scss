@@ -1,0 +1,41 @@
+@use 'sass:color';
+
+//*****************//
+//* Font families *//
+//*****************//
+
+//**********//
+//* Colors *//
+//**********//
+
+
+//*****************//
+//* Default sizes *//
+//*****************//
+$font-weight--light:   300 !default;
+$font-weight--regular: 400 !default;
+$font-weight--bold:    600 !default;
+
+$font-size--default: 16px !default;
+$font-size--sm: 10px !default;
+$font-size--md: 14px !default;
+$font-size--lg: 18px !default;
+$font-size--xl: 22px !default;
+
+//***************//
+//* Transitions *//
+//***************//
+$tr-02--ease: all .2s ease;
+$tr-03--ease: all .3s ease;
+$tr-04--ease: all .4s ease;
+$tr-05--ease: all .5s ease;
+
+$tr-02--ease-in: all .2s ease-in;
+$tr-03--ease-in: all .3s ease-in;
+$tr-04--ease-in: all .4s ease-in;
+$tr-05--ease-in: all .5s ease-in;
+
+$tr-02--ease-out: all .2s ease-out;
+$tr-03--ease-out: all .3s ease-out;
+$tr-04--ease-out: all .4s ease-out;
+$tr-05--ease-out: all .5s ease-out;
