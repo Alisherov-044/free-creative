@@ -1,0 +1,23 @@
+@use '../../abstract/mixins';
+@use '../../abstract/functions' as fn;
+@use '../../base/variables' as var;
+@use 'sass:color';
+
+/*****************
+** Input Styles **
+*****************/
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
+    position: relative;
+    width: fn.px-to-rem(350px);
+    height: fn.px-to-rem(70px);
+    border: 1px solid var.$btn-txt--color;
+    border-radius: 10px;
+    padding: fn.px-to-rem(23px) fn.px-to-rem(30px);
+    font-size: fn.px-to-rem(18px);
+    line-height: fn.px-to-percent(25px, 18px);
+    font-weight: 400;
+    color: var.$grey--color;
+}

@@ -6,3 +6,30 @@
 /******************
 ** Button Styles **
 ******************/
+button.button {
+    position: relative;
+    padding: fn.px-to-rem(23px) fn.px-to-rem(47px);
+    font-size: fn.px-to-rem(18px);
+    line-height: fn.px-to-percent(25.2px, 18px);
+    font-weight: 400;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    color: var.$btn-txt--color;
+    transition: var.$tr-03--ease;
+    cursor: pointer;
+
+    &--primary {
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+    &--secondary {
+        background-color: transparent;
+        border-color: #000;
+    }
+
+    &--third {
+        background-color: var.$blue--color;
+        color: #fff;
+    }
+}

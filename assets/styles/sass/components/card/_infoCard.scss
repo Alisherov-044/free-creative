@@ -1,0 +1,31 @@
+@use '../../abstract/mixins';
+@use '../../abstract/functions' as fn;
+@use '../../base/variables' as var;
+
+/*********************
+** Info Card Styles **
+*********************/
+.info__card {
+    @include mixins.d-flex(column, unset, unset);
+    position: relative;
+    width: fn.px-to-rem(255px);
+    padding: fn.px-to-rem(10px);
+    border-radius: 10px;
+    background-color: var.$blue--color;
+
+    &__text {
+        margin-bottom: fn.px-to-rem(25px);
+        font-size: fn.px-to-rem(18px);
+        line-height: fn.px-to-rem(25px, 18px);
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .url {
+        justify-self: flex-end;
+        font-size: fn.px-to-rem(15px);
+        line-height: fn.px-to-rem(19px, 15px);
+        font-weight: 400;
+        color: #fff;
+    }
+}

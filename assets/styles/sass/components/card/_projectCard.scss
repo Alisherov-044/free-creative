@@ -1,0 +1,45 @@
+@use '../../abstract/mixins';
+@use '../../abstract/functions' as fn;
+@use '../../base/variables' as var;
+
+/************************
+** Project Card Styles **
+************************/
+.project__card {
+    @include mixins.d-flex(column, unset, unset, nowrap, fn.px-to-rem(45px));
+    position: relative;
+
+    &__img {
+        position: relative;
+        width: 100%;
+        height: fn.px-to-rem(655px);
+    }
+
+    &__content {
+        @include mixins.d-flex(row, flex-start, unset, wrap, fn.px-to-rem(65px));
+
+        @include mixins.breakpoint--sm {
+            flex-direction: column;
+        }
+    }
+
+    .col {
+        @include mixins.d-flex(column, unset, unset, nowrap, fn.px-to-rem(5px));
+    }
+
+    &__title {
+        font-size: fn.px-to-rem(55px);
+        line-height: 100%;
+        font-weight: 400;
+        color: var.$btn-txt--color;
+    }
+
+
+    &__description {
+        max-width: fn.px-to-rem(250px);
+        font-size: fn.px-to-rem(18px);
+        line-height: fn.px-to-percent(25px, 18px);
+        font-weight: 400;
+        color: var.$btn-txt--color;
+    }
+}

@@ -5,18 +5,544 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/css/main.css" />
-    <title>Template</title>
+    <title>FREE.creative</title>
   </head>
   <body>
     <div class="root" id="root">
       <!-- Header -->
-      <header class="header" id="header"></header>
+      <header class="header" id="header">
+        <div class="header__background img banner">
+          <img
+            class="banner--lg"
+            src="./assets/images/banners/main-banner.png"
+            alt="header background banner"
+          />
+          <img
+            class="banner--sm"
+            src="./assets/images/banners/main-banner-sm.png"
+            alt="header background banner"
+          />
+        </div>
+        <div class="container">
+          <!-- Navbar -->
+          <nav class="header__navbar navbar">
+            <div class="navbar__logo">
+              <div class="logo__img img">
+                <a href="/">
+                  <img src="./assets/images/logo.svg" alt="navbar logo" />
+                </a>
+              </div>
+              <p class="logo__text text">
+                Разрабатываем фирменные стили c 2009 года
+              </p>
+            </div>
+            <div class="navbar__info">
+              <p class="phone__number">8 (495) 156-39-11</p>
+              <a href="#" class="social__network facebook">
+                <img
+                  src="./assets/images/icons/facebook-icon.svg"
+                  alt="facebook icon"
+                />
+              </a>
+              <a href="#" class="social__network instagram">
+                <img
+                  src="./assets/images/icons/instagram-icon.svg"
+                  alt="instagram icon"
+                />
+              </a>
+            </div>
+            <div class="burger-menu img">
+              <img
+                src="./assets/images/icons/burger-menu-icon.svg"
+                alt="burger menu icon"
+              />
+            </div>
+          </nav>
+          <div class="header__action">
+            <h1 class="suggestion__title suggestion__text title">
+              Вам нужен фирменный стиль или ребрендинг?
+            </h1>
+            <p class="suggestion__description suggestion__text description">
+              Разработаем в срок от 10-ти дней
+            </p>
+            <div class="action__buttons__wrapper">
+              <button class="action__button button button--primary">
+                Портфолио
+              </button>
+              <button class="action__button button button--primary">
+                Оставить заявку
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
       <!-- Main -->
       <main class="main" id="main">
-        <!-- ... Sections -->
+        <!-- About Section -->
+        <section class="about__section">
+          <div class="container">
+            <div class="question__card card">
+              <h4 class="question__card__title card__title title">
+                Что такое фирменный стиль
+              </h4>
+              <div class="question__card__content card__content">
+                <div class="question__card__img card__img img">
+                  <img
+                    src="./assets/images/cards/questions/question-card-1.png"
+                    alt="card-1 img"
+                  />
+                </div>
+                <p
+                  class="question__card__description card__description description"
+                >
+                  Это набор тех уникальных «признаков», по которым клиент
+                  отличит вас от других компаний. Фирменный стиль отражает
+                  миссию бренда, ценности, является способом его идентификации,
+                  формирует определённое восприятие в коммуникации с
+                  потребителями. <br /><br />
+                  В идеале разработка корпоративного стиля должна происходить
+                  одновременно с созданием бизнеса и формированием его
+                  фундаментальных идей. Есть и второй вариант: бизнес существует
+                  определенное время и ему нужен перезапуск - это называется
+                  редизайн или ребрендинг: в мире жёсткой конкуренции важно быть
+                  «в тренде», успевать за изменениями в поведениях покупателя и
+                  “говорить” с ним на одном языке.
+                </p>
+              </div>
+            </div>
+            <div class="tips__card card">
+              <h1 class="tips__card__title card__title">
+                Название и логотип – важные составляющие фирменного стиля, но на
+                этом всё только начинается. Ниже основные элементы:
+              </h1>
+              <ul class="tips__wrapper">
+                <li class="tip">
+                  <h5 class="index">1</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">Название компании</h6>
+                  </div>
+                </li>
+                <li class="tip">
+                  <h5 class="index">2</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">
+                      Логотип – основной графический символ
+                    </h6>
+                  </div>
+                </li>
+                <li class="tip">
+                  <h5 class="index">3</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">
+                      Фирменные цвета всей коммуникации (онлайн и оффлайн)
+                    </h6>
+                  </div>
+                </li>
+                <li class="tip">
+                  <h5 class="index">4</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">Шрифт</h6>
+                  </div>
+                </li>
+                <li class="tip">
+                  <h5 class="index">5</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">Носители фирменного стиля</h6>
+                    <p class="tip__description description">
+                      Этот набор варьируется в зависимости от нужд и
+                      потребностей компании: визитные карточки, фирменные бланки
+                      и прочая деловая документация, упаковка, сувенирная
+                      продукция, брендинг автотранспорта.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="question__card question__card--reverse card">
+              <h4 class="question__card__title card__title title">
+                Сколько стоит фирменный стиль?
+              </h4>
+              <div class="question__card__content card__content">
+                <div class="question__card__img card__img img">
+                  <img
+                    src="./assets/images/cards/questions/question-card-2.png"
+                    alt="card-2 img"
+                  />
+                </div>
+                <p
+                  class="question__card__description card__description description"
+                >
+                  Каждая задача по разработке фирменного стиля уникальна для нас
+                  — это новый вызов и новые эмоции. Мы принципиально не
+                  предлагаем вам стандартизированные пакеты “эконом”,
+                  “стандрат”, или “премиум”, мы не штампуем, мы - создаем.
+                  <br /><br />
+                  Стоимость разработки фирменного стиля в нашем агентстве
+                  начинается от 120 000 руб., финальную планку без брифинга
+                  определить невозможно - давайте созвонимся и обсудим ваш
+                  проект! <br /><br />
+                  <span class="wrap--bg">
+                    Каждый клиент нашего агентства получает приятный бонус на
+                    финише проекта, о котором мы расскажем ниже ▼
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="projects__section">
+          <div class="container">
+            <div class="project__cards__wrapper">
+              <div class="project__card card">
+                <div class="project__card__img card__img img">
+                  <img
+                    src="./assets/images/cards/projects/project-card-1.png"
+                    alt="project-card-1"
+                  />
+                </div>
+                <div class="project__card__content card__content">
+                  <div class="col">
+                    <h3 class="project__card__title card__title title">
+                      Amperia
+                    </h3>
+                    <p
+                      class="project__card__description card__description description"
+                    >
+                      Бренд красивых сувениров и подарков для дома
+                    </p>
+                  </div>
+                  <button class="button button--secondary">
+                    Смотреть проект
+                  </button>
+                </div>
+              </div>
+              <div class="project__card card">
+                <div class="project__card__img card__img img">
+                  <img
+                    src="./assets/images/cards/projects/project-card-2.png"
+                    alt="project-card-2"
+                  />
+                </div>
+                <div class="project__card__content card__content">
+                  <div class="col">
+                    <h3 class="project__card__title card__title title">
+                      AQ.Lifecare
+                    </h3>
+                    <p
+                      class="project__card__description card__description description"
+                    >
+                      Инновационная клиника внутривенной медицины
+                    </p>
+                  </div>
+                  <button class="button button--secondary">
+                    Смотреть проект
+                  </button>
+                </div>
+              </div>
+              <div class="project__card card">
+                <div class="project__card__img card__img img">
+                  <img
+                    src="./assets/images/cards/projects/project-card-3.png"
+                    alt="project-card-3"
+                  />
+                </div>
+                <div class="project__card__content card__content">
+                  <div class="col">
+                    <h3 class="project__card__title card__title title">
+                      Vilata
+                    </h3>
+                    <p
+                      class="project__card__description card__description description"
+                    >
+                      Бренд натуральных и вкусных соусов
+                    </p>
+                  </div>
+                  <button class="button button--secondary">
+                    Смотреть проект
+                  </button>
+                </div>
+              </div>
+              <div class="project__card card">
+                <div class="project__card__img card__img img">
+                  <img
+                    src="./assets/images/cards/projects/project-card-4.png"
+                    alt="project-card-4"
+                  />
+                </div>
+                <div class="project__card__content card__content">
+                  <div class="col">
+                    <h3 class="project__card__title card__title title">
+                      Coral Black
+                    </h3>
+                    <p
+                      class="project__card__description card__description description"
+                    >
+                      Черная икра в современной инторпритации
+                    </p>
+                  </div>
+                  <button class="button button--secondary">
+                    Смотреть проект
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="button project__cards__button cards__button button--third"
+          >
+            Показать еще
+          </button>
+        </section>
+        <!-- Guides Section -->
+        <section class="guides__section">
+          <div class="container">
+            <div class="question__card card">
+              <h4 class="question__card__title card__title title">
+                Гайдлайны в подарок
+              </h4>
+              <div class="question__card__content card__content">
+                <div class="question__card__img card__img img">
+                  <img
+                    src="./assets/images/cards/questions/question-card-3.png"
+                    alt="card-3 img"
+                  />
+                </div>
+                <p
+                  class="question__card__description card__description description"
+                >
+                  <span class="wrap--bg">
+                    Что такое гайдлайн и зачем он нужен? <br /><br />
+                    А теперь об обещанном бонусе: заказывая фирменный стиль в
+                    нашем агентстве вы получаете минимальный гайдлайн в подарок,
+                    это позволит вам уже быть на шаг впереди ваших конкурентов!
+                  </span>
+                  <br /><br />
+                  Гайдлайн – это свод правил по воспроизведению фирменного стиля
+                  на носителях. Если коротко, то в гайдлайне описано, как должен
+                  выглядеть каждый элемент корпоративного стиля и какие правила
+                  его использования. Гайдлайн помогает вашему бизнесу экономить
+                  время и деньги, помогать масштабироваться, а также
+                  тиражировать ваш бизнес посредством франшизы.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Order Section -->
+        <section class="order__section">
+          <div class="container">
+            <div class="col">
+              <h3 class="order__section__title section__title title">
+                Оставьте заявку на разработку вашего продукта
+              </h3>
+              <p
+                class="order__section__description section__description description"
+              >
+                Наши эксперты свяжутся с вами в ближайшее время
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="input__row">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Ваше Имя"
+                    />
+                    <input
+                      type="number"
+                      name="phone"
+                      id="phone"
+                      placeholder="+7 (999) 999-99-99"
+                    />
+                  </div>
+                  <div class="checkbox__row">
+                    <input type="checkbox" name="is_agree" id="is_agree" />
+                    <p class="privacy-term">
+                      Я принимаю
+                      <a href="#" class="privacy-guides"
+                        >условия передачи персональных данных</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="button__wrapper">
+                  <button class="button button--third">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Guarantee Section -->
+        <section class="guarantee__section">
+          <div class="guarantee__section__background section__background img">
+            <img
+              src="./assets/images/banners/secondary-banner.png"
+              alt="secondary-banner"
+            />
+          </div>
+          <div class="container">
+            <div class="tips__card tips__card--white card">
+              <h1 class="tips__card__title card__title">
+                Гарантия качества: <br />
+                5 фундаментальных преимуществ работать с нами
+              </h1>
+              <ul class="tips__wrapper">
+                <li class="tip">
+                  <h5 class="index">1</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">
+                      Разработкой вашего фирменного стиля займется команда
+                      профессионалов с высшим профильным образованием.
+                    </h6>
+                  </div>
+                </li>
+                <li class="tip">
+                  <h5 class="index">2</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">
+                      Все права на результат работ переходят от Исполнителя к
+                      Заказчику и это закреплено юридически в нашем с вами
+                      Договоре.
+                    </h6>
+                  </div>
+                </li>
+                <li class="tip">
+                  <h5 class="index">3</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">
+                      Все сотрудники компании строго соблюдают правила
+                      коммерческой тайны по вашему проекту, мы никогда не
+                      разглашаем стоимость разработки вашего проекта и любые
+                      детали, связанные с проектом.
+                    </h6>
+                  </div>
+                </li>
+                <li class="tip">
+                  <h5 class="index">4</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">
+                      Мы гарантируем, что любая разработка проходит проверку на
+                      оригинальность, вы получайте действительно уникальный
+                      продукт
+                    </h6>
+                  </div>
+                </li>
+                <li class="tip">
+                  <h5 class="index">5</h5>
+                  <div class="col">
+                    <h6 class="tip__title title">
+                      Мы имеем опыт работы с малым, средним и крупным бизнесом,
+                      а также с международными корпорациями Наша репутация - это
+                      9-ть лет успешной работы. 8-мь из 10-ти клиентов после
+                      совместной разработки фирменного стиля обращаются к нам
+                      повторно: за созданием сайта, контента для социальных
+                      сетей или по любой другой задаче.
+                    </h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
       <!-- Footer -->
-      <footer class="footer" id="footer"></footer>
+      <footer class="footer" id="footer">
+        <div class="container">
+          <!-- Contact Section -->
+          <section class="contact__section">
+            <div class="row">
+              <div class="contact-info col">
+                <h3 class="contact__section__title section__title title">
+                  Контакты
+                </h3>
+                <div class="contact-info__wrapper">
+                  <h5 class="contact__section__info section__info info">
+                    8 (495) 156-39-11
+                  </h5>
+                  <p class="contact__section__info section__info info">
+                    brand@free-creative.com
+                  </p>
+                  <p class="contact__section__info section__info info">
+                    Москва, Садовническая улица 69
+                  </p>
+                </div>
+              </div>
+              <div class="contact-form col">
+                <h3 class="contact__section__title section__title title">
+                  Связаться с нами
+                </h3>
+                <div class="col">
+                  <div class="col">
+                    <div class="input__col">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Ваше Имя"
+                      />
+                      <input
+                        type="number"
+                        name="phone"
+                        id="phone"
+                        placeholder="+7 (999) 999-99-99"
+                      />
+                    </div>
+                    <div class="checkbox__row">
+                      <input type="checkbox" name="is_agree" id="is_agree" />
+                      <p class="privacy-term">
+                        Я принимаю
+                        <a href="#" class="privacy-guides"
+                          >условия передачи персональных данных</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="button__wrapper">
+                    <button class="button button--third">
+                      Оставить заявку
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Info Section -->
+          <section class="info__section">
+            <h3 class="info__section__title section__title title">Мы в СМИ</h3>
+            <div class="info__cards__wrapper">
+              <div class="info__card card">
+                <h5 class="info__card__text card__text text">
+                  История агентства FREE.creative
+                </h5>
+                <a href="#" class="url">vc.ru</a>
+              </div>
+              <div class="info__card card">
+                <h5 class="info__card__text card__text text">
+                  Традиции и современность: брендинг ресторана-пекарни «Ешь
+                  Хлеб»
+                </h5>
+                <a href="#" class="url">vc.ru</a>
+              </div>
+              <div class="info__card card">
+                <h5 class="info__card__text card__text text">
+                  Четыре боли крупных клиентов и целительная сила аккаунтинга
+                </h5>
+                <a href="#" class="url">vc.ru</a>
+              </div>
+              <div class="info__card card">
+                <h5 class="info__card__text card__text text">
+                  Как выводить на рынок бренды будущего: кейс инновационной
+                  клиники витаминных коктейлей
+                </h5>
+                <a href="#" class="url">vc.ru</a>
+              </div>
+            </div>
+          </section>
+          <p class="privacy">@ FREE.creative 2008—2020</p>
+        </div>
+      </footer>
     </div>
     <script src="./assets/scripts/main.js"></script>
   </body>

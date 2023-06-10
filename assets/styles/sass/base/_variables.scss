@@ -3,10 +3,14 @@
 //*****************//
 //* Font families *//
 //*****************//
+$main--font: 'Poppins', sans-serif;
 
 //**********//
 //* Colors *//
 //**********//
+$btn-txt--color: #181818;
+$blue--color: #2B59C3;
+$grey--color: #868686;
 
 
 //*****************//
@@ -21,6 +25,8 @@ $font-size--sm: 10px !default;
 $font-size--md: 14px !default;
 $font-size--lg: 18px !default;
 $font-size--xl: 22px !default;
+
+$container--width: 1110px !default;
 
 //***************//
 //* Transitions *//

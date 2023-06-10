@@ -1,0 +1,16 @@
+@use '../../abstract/mixins';
+@use '../../abstract/functions' as fn;
+@use '../../base/variables' as var;
+@use 'sass:color';
+
+/********************
+** Checkbox Styles **
+********************/
+input[type='checkbox'] {
+    position: relative;
+    width: fn.px-to-rem(18px);
+    height: fn.px-to-rem(18px);
+    border: 1px solid var.$btn-txt--color;
+    border-radius: 10px;
+    cursor: pointer;
+}

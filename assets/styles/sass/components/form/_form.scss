@@ -1,8 +1,2 @@
-@use '../../abstract/mixins';
-@use '../../abstract/functions' as fn;
-@use '../../base/variables' as var;
-@use 'sass:color';
-
-/****************
-** Form Styles **
-****************/
+@use './input';
+@use './checkbox';

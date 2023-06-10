@@ -5,3 +5,97 @@
 /******************
 ** Footer Styles **
 ******************/
+.footer {
+    position: relative;
+
+    .contact__section {
+        position: relative;
+
+        .row {
+            @include mixins.d-flex(row-reverse, unset, space-between, wrap, fn.px-to-rem(50px));
+            margin-top: fn.px-to-rem(150px);
+    
+            @include mixins.breakpoint--lg(812px) {
+                flex-direction: column;
+            }
+    
+            .contact-form.col {
+                @include mixins.d-flex(column, unset, unset);
+    
+                .input__col {
+                    @include mixins.d-flex(column, unset, unset, nowrap, fn.px-to-rem(10px));
+                    position: relative;
+                    margin-top: fn.px-to-rem(30px);
+                }
+        
+                .checkbox__row {
+                    @include mixins.d-flex(row, center, unset, nowrap, fn.px-to-rem(10px));
+                    position: relative;
+                    margin-top: fn.px-to-rem(20px);
+        
+                    .privacy-term {
+                        font-size: fn.px-to-rem(18px);
+                        line-height: fn.px-to-percent(25px, 18px);
+                        font-weight: 400;
+                        color: var.$btn-txt--color;
+        
+                        .privacy-guides {
+                            color: var.$blue--color;
+                        }
+                    }
+                }
+    
+                button.button {
+                    margin-top: fn.px-to-rem(48px);
+                }
+            }
+        }
+    
+        &__title {
+            font-size: fn.px-to-rem(38px);
+            line-height: fn.px-to-percent(42px, 38px);
+            font-weight: 400;
+            color: var.$btn-txt--color;
+        }
+    
+    
+        &__info {
+            margin-top: fn.px-to-rem(15px);
+            font-size: fn.px-to-rem(26px);
+            line-height: fn.px-to-percent(30px, 26px);
+            font-weight: 400;
+            color: var.$btn-txt--color;
+    
+            &:first-child {
+                margin-top: fn.px-to-rem(30px);
+            }
+        }
+    }
+
+    .info__section {
+        position: relative;
+        margin-top: fn.px-to-rem(130px);
+
+        &__title {
+            font-size: fn.px-to-rem(38px);
+            line-height: fn.px-to-percent(42px, 38px);
+            font-weight: 400;
+            color: var.$btn-txt--color;
+        }
+
+        .info__cards__wrapper {
+            @include mixins.d-flex(row, flex-start, unset, wrap, fn.px-to-rem(30px));
+            position: relative;
+            margin-top: fn.px-to-rem(20px);
+        }
+    }
+
+    .privacy {
+        margin-top: fn.px-to-rem(38px);
+        margin-bottom: fn.px-to-rem(20px);
+        font-size: fn.px-to-rem(18px);
+        line-height: fn.px-to-percent(25px, 18px);
+        font-weight: 400;
+        color: var.$btn-txt--color;
+    }
+}

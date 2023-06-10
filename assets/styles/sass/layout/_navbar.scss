@@ -5,3 +5,78 @@
 /******************
 ** Navbar Styles **
 ******************/
+.navbar {
+    @include mixins.d-flex(row, center, space-between);
+    position: relative;
+
+    &__logo {
+        @include mixins.d-flex(row, center, unset, nowrap, fn.px-to-rem(22px));
+        position: relative;
+        z-index: 2;
+        
+        .logo__img {
+            position: relative;
+            width: fn.px-to-rem(84px);
+            height: fn.px-to-rem(35px);
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        .logo__text {
+            font-size: fn.px-to-rem(15px);
+            line-height: fn.px-to-percent(19px, 15px);
+            font-weight: 400;
+            max-width: fn.px-to-rem(220px);
+            color: #fff;
+        }
+    }
+
+    &__info {
+        @include mixins.d-flex(row, center, unset, nowrap, fn.px-to-rem(23px));
+        position: relative;
+        z-index: 2;
+
+        .phone__number {
+            font-size: fn.px-to-rem(16px);
+            line-height: fn.px-to-percent(22.4px);
+            font-weight: 400;
+            padding: fn.px-to-rem(6px) fn.px-to-rem(32px);
+            border: 1px solid #fff;
+            border-radius: 15px;
+            color: #fff;
+        }
+
+        .social__network {
+            @include mixins.d-flex(unset, center, center);
+            position: relative;
+            width: fn.px-to-rem(36px);
+            height: fn.px-to-rem(36px);
+            border: 1px solid #fff;
+            border-radius: 50%;
+
+            img {
+                max-width: fn.px-to-rem(14px);
+                max-height: fn.px-to-rem(14px);
+                object-fit: contain;
+            }
+        }
+
+        @include mixins.breakpoint--md {
+            display: none;
+        }
+    }
+
+    .burger-menu {
+        display: none;
+        position: relative;
+        width: fn.px-to-rem(30px);
+        height: fn.px-to-rem(18px);
+        cursor: pointer;
+
+        @include mixins.breakpoint--sm {
+            display: inline-block;
+        }
+    }
+}

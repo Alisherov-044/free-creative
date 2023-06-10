@@ -5,3 +5,116 @@
 /*********************
 ** Home Page Styles **
 *********************/
+.main {
+    flex: 1 1 auto;
+    position: relative;
+
+    .about__section {
+        position: relative;
+
+        .question__card {
+            margin-top: fn.px-to-rem(75px);
+        }
+
+        .tips__card {
+            margin-top: fn.px-to-rem(150px);
+        }
+    }
+
+    .projects__section {
+        @include mixins.d-flex(column, center, unset);
+        position: relative;
+
+        .project__cards__wrapper {
+            @include mixins.d-flex(column, unset, unset, nowrap, fn.px-to-rem(100px));
+            position: relative;
+            margin-top: fn.px-to-rem(130px);
+        }
+
+        .project__cards__button {
+            margin-top: fn.px-to-rem(76px);
+        }
+    }
+
+    .guides__section {
+        position: relative;
+
+        .question__card {
+            margin-top: fn.px-to-rem(100px);
+        }
+    }
+
+    .order__section {
+        position: relative;
+        margin-top: fn.px-to-rem(77px);
+
+        .col {
+            @include mixins.d-flex(column, unset, unset);
+        }
+
+        &__title {
+            font-size: fn.px-to-rem(38px);
+            line-height: fn.px-to-percent(42px, 38px);
+            font-weight: 400;
+            color: var.$btn-txt--color;
+        }
+
+        &__description {
+            margin-top: fn.px-to-rem(10px);
+            font-size: fn.px-to-rem(26px);
+            line-height: fn.px-to-percent(30px, 26px);
+            font-weight: 400;
+            color: var.$btn-txt--color;
+        }
+
+        .row {
+            @include mixins.d-flex(row, unset, unset, wrap, fn.px-to-rem(30px));
+            margin-top: fn.px-to-rem(27px);
+
+            .col {
+                .input__row {
+                    @include mixins.d-flex(row, center, unset, wrap, fn.px-to-rem(30px));
+                    position: relative;
+                }
+        
+                .checkbox__row {
+                    @include mixins.d-flex(row, center, unset, nowrap, fn.px-to-rem(10px));
+                    position: relative;
+                    margin-top: fn.px-to-rem(20px);
+        
+                    .privacy-term {
+                        font-size: fn.px-to-rem(18px);
+                        line-height: fn.px-to-percent(25px, 18px);
+                        font-weight: 400;
+                        color: var.$btn-txt--color;
+        
+                        .privacy-guides {
+                            color: var.$blue--color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .guarantee__section {
+        position: relative;
+        height: fn.px-to-rem(1200px);
+        margin-top: fn.px-to-rem(150px);
+
+        @include mixins.breakpoint--sm-extra(570px) {
+            display: none;
+        }
+
+        .container {
+            @include mixins.d-flex(row, center, center);
+            height: 100%;
+        }
+
+        &__background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
