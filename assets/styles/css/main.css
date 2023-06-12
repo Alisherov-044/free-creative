@@ -555,6 +555,7 @@ button.button--third {
 ******************/
 .footer {
   position: relative;
+  padding-top: 9.375rem;
 }
 .footer .contact__section {
   position: relative;
@@ -566,7 +567,6 @@ button.button--third {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 3.125rem;
-  margin-top: 9.375rem;
 }
 @media (max-width: 812px) {
   .footer .contact__section .row {
@@ -631,7 +631,7 @@ button.button--third {
 }
 .footer .info__section {
   position: relative;
-  margin-top: 8.125rem;
+  padding-top: 8.125rem;
 }
 .footer .info__section__title {
   font-size: 2.375rem;
@@ -704,7 +704,7 @@ button.button--third {
 }
 .main .order__section {
   position: relative;
-  margin-top: 4.8125rem;
+  padding-top: 4.8125rem;
 }
 .main .order__section .col {
   display: flex;
@@ -744,6 +744,13 @@ button.button--third {
   flex-wrap: wrap;
   gap: 1.875rem;
   position: relative;
+}
+@media (max-width: 552px) {
+  .main .order__section .row .col .input__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
 }
 .main .order__section .row .col .checkbox__row {
   display: flex;
@@ -787,6 +794,103 @@ button.button--third {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.main .instruction__section {
+  position: relative;
+  padding-top: 9.375rem;
+}
+.main .instruction__section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  justify-content: unset;
+  flex-wrap: nowrap;
+  gap: 5rem;
+}
+.main .instruction__section__title {
+  max-width: 32.5rem;
+  font-size: 3.4375rem;
+  line-height: 100%;
+  font-weight: 400;
+  color: #181818;
+}
+.main .instruction__section .instruction__steps__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  justify-content: unset;
+  flex-wrap: nowrap;
+  gap: 3.75rem;
+  position: relative;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3.125rem;
+  position: relative;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step-title__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  justify-content: unset;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step__icon {
+  display: flex;
+  flex-direction: unset;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  position: relative;
+  width: 5.625rem;
+  height: 5.625rem;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step__icon img {
+  object-fit: contain;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step__title {
+  max-width: 18.75rem;
+  font-size: 1.625rem;
+  line-height: 107.6923076923%;
+  font-weight: 400;
+  color: #181818;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step-info__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: unset;
+  flex-wrap: nowrap;
+  gap: 1.875rem;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step-info {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  justify-content: unset;
+  flex-wrap: nowrap;
+  gap: 0.9375rem;
+  position: relative;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step-info__title {
+  max-width: 8.75rem;
+  font-size: 1.125rem;
+  line-height: 140%;
+  font-weight: 400;
+  color: #181818;
+}
+.main .instruction__section .instruction__steps__wrapper .instruction__step-info__description {
+  max-width: 11.25rem;
+  font-size: 0.9375rem;
+  line-height: 126.6666666667%;
+  font-weight: 400;
+  color: #181818;
 }
 
 /**********************

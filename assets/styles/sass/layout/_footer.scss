@@ -7,14 +7,14 @@
 ******************/
 .footer {
     position: relative;
+    padding-top: fn.px-to-rem(150px);
 
     .contact__section {
         position: relative;
 
         .row {
             @include mixins.d-flex(row-reverse, unset, space-between, wrap, fn.px-to-rem(50px));
-            margin-top: fn.px-to-rem(150px);
-    
+            
             @include mixins.breakpoint--lg(812px) {
                 flex-direction: column;
             }
@@ -74,7 +74,7 @@
 
     .info__section {
         position: relative;
-        margin-top: fn.px-to-rem(130px);
+        padding-top: fn.px-to-rem(130px);
 
         &__title {
             font-size: fn.px-to-rem(38px);
